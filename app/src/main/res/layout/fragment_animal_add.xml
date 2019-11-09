@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <EditText
+            android:id="@+id/animalName"
+            style="@style/AnimalNameHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/hintAnimalName"
+            android:inputType="textPersonName"
+            android:importantForAutofill="no" />
+
+        <ImageView
+            android:id="@+id/animalImage"
+            android:layout_width="match_parent"
+            android:layout_height="164dp"
+            android:layout_marginTop="20dp"
+            android:contentDescription="@string/animalImage"
+            android:src="@android:drawable/sym_def_app_icon"
+            tools:srcCompat="@drawable/swimmingfish" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        style="@style/MiddleLeft"
+                        android:layout_width="15dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/ENGName" />
+
+                    <EditText
+                        android:id="@+id/animalEngName"
+                        style="@style/MiddleRight"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/ENGName"
+                        android:inputType="textPersonName"
+                        android:importantForAutofill="no" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        style="@style/MiddleLeft"
+                        android:layout_width="15dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/sciName" />
+
+                    <EditText
+                        android:id="@+id/animalSciName"
+                        style="@style/MiddleRight"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="@string/hintAnimalSciName"
+                        android:importantForAutofill="no"
+                        android:inputType="textPersonName" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        style="@style/MiddleLeft"
+                        android:layout_width="15dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/species" />
+
+                    <EditText
+                        android:id="@+id/animalSpeName"
+                        style="@style/MiddleRight"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="@string/hintAnimalSpecies"
+                        android:inputType="textPersonName"
+                        android:importantForAutofill="no" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView14"
+                    style="@style/Header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/hintFoodAndLocation" />
+
+                <EditText
+                    android:id="@+id/animalFoodAndLocation"
+                    style="@style/Detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:hint="@string/hintFoodAndLocation"
+                    android:inputType="textMultiLine"
+                    android:importantForAutofill="no" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    style="@style/Header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/detail" />
+
+                <EditText
+                    android:id="@+id/animalDetail"
+                    style="@style/Detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:hint="@string/hintFoodDetail"
+                    android:inputType="textMultiLine"
+                    android:importantForAutofill="no" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp">
+
+                    <Button
+                        android:id="@+id/acceptButton"
+                        style="@style/Button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/holo_green_light"
+                        android:text="@string/addButton" />
+
+                    <Button
+                        android:id="@+id/cancelButton"
+                        style="@style/Button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/holo_red_light"
+                        android:text="@string/cancelButton" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</layout>

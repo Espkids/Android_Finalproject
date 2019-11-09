@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">AndroidFinalProject</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="appName" translatable="false">"AQUATIC   ANIMALS "</string>
+    <string name="appImage">application image</string>
+    <string name="startButton">GO TO APP</string>
+    <string name="encyclopedia">ENCYCLOPEDIA</string>
+    <string name="animalImage">Animal Image</string>
+    <string name="hintAnimalName">Animal Name</string>
+    <string name="ENGName">ชื่อภาษาอังกฤษ</string>
+    <string name="hintAnimalENGName">ชื่อภาษาอังกฤษ</string>
+    <string name="sciName">ชื่อวิทยาศาสตร์</string>
+    <string name="hintAnimalSciName">ชื่อวิทยาศาสตร์</string>
+    <string name="species">สปีชีส์</string>
+    <string name="hintAnimalSpecies">สปีชีส์</string>
+    <string name="hintFoodAndLocation">อาหารและถิ่นที่อยู่</string>
+    <string name="hintFoodDetail">รายละเอียดอาหารและที่อยู่อาศัย</string>
+    <string name="detail">รายละเอียด</string>
+    <string name="animalDetail">รายละเอียดของสัตว์</string>
+    <string name="addButton">เพิ่มข้อมูล</string>
+    <string name="acceptButton">ยืนยัน</string>
+    <string name="cancelButton">ยกเลิก</string>
+    <string name="updateButton">Update</string>
+    <string name="editButton">แก้ไขข้อมูล</string>
+    <string name="deleteButton">ลบข้อมูล</string>
+    <string name="animalNameList">รายชื่อสัตว์</string>
+    <string name="myImage">My image</string>
+    <string name="myDetail">แอพพลิเคชั่นนี้เป็นแอพพลิเคชั่นแสดงข้อมูลของสัตว์ทะเล</string>
+    <string name="madeBy">จัดทำโดย</string>
+    <string name="myName">นายพงษ์ศิริ หลักงาม 59160586</string>
+</resources>
