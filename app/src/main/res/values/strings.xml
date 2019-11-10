@@ -30,4 +30,5 @@
     <string name="myDetail">แอพพลิเคชั่นนี้เป็นแอพพลิเคชั่นแสดงข้อมูลของสัตว์ทะเล</string>
     <string name="madeBy">จัดทำโดย</string>
     <string name="myName">นายพงษ์ศิริ หลักงาม 59160586</string>
+    <string name="aboutFragment">About</string>
 </resources>

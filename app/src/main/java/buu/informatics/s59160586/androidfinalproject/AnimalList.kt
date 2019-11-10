@@ -2,12 +2,11 @@ package buu.informatics.s59160586.androidfinalproject
 
 
 import android.os.Bundle
+import android.view.*
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
+import androidx.navigation.ui.NavigationUI
 import buu.informatics.s59160586.androidfinalproject.databinding.FragmentAnimalListBinding
 import buu.informatics.s59160586.androidfinalproject.databinding.FragmentTitleBinding
 
@@ -27,9 +26,7 @@ class AnimalList : Fragment() {
         binding.addButton.setOnClickListener { view: View? ->
             view?.findNavController()?.navigate(R.id.action_animalList2_to_animalAdd)
         }
-
         return binding.root
     }
-
 
 }

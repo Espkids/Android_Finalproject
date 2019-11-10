@@ -21,9 +21,6 @@
         <action
             android:id="@+id/action_animalList2_to_animalDetail2"
             app:destination="@id/animalDetail2" />
-        <action
-            android:id="@+id/action_animalList2_to_about"
-            app:destination="@id/about" />
     </fragment>
     <fragment
         android:id="@+id/animalAdd"
@@ -38,7 +35,7 @@
         android:name="buu.informatics.s59160586.androidfinalproject.AnimalDetail"
         android:label="AnimalDetail" />
     <fragment
-        android:id="@+id/about"
+        android:id="@+id/aboutFragment"
         android:name="buu.informatics.s59160586.androidfinalproject.About"
         android:label="About" />
 </navigation>
