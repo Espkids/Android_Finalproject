@@ -2,6 +2,7 @@ package buu.informatics.s59160586.androidfinalproject
 
 
 import android.os.Bundle
+import android.util.Log
 import android.view.*
 import androidx.fragment.app.Fragment
 import androidx.databinding.DataBindingUtil
@@ -27,6 +28,36 @@ class AnimalList : Fragment() {
             view?.findNavController()?.navigate(R.id.action_animalList2_to_animalAdd)
         }
         return binding.root
+    }
+
+    override fun onStart() {
+        super.onStart()
+        Log.i("AnimalListFragment " , "AnimalListStarted")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Log.i("AnimalListFragment " , "AnimalListPause")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Log.i("AnimalListFragment " , "AnimalListStop")
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Log.i("AnimalListFragment " , "AnimalListResume")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.i("AnimalListFragment " , "AnimalListDestroy")
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        Log.i("AnimalListFragment " , "AnimalListCreate")
     }
 
 }
