@@ -27,4 +27,8 @@ class ViewModel(application: Application) : AndroidViewModel(application) {
     fun delete(item: String) = viewModelScope.launch {
         dataControll.delete(item)
     }
+
+    fun update(item: Animal) = viewModelScope.launch {
+        dataControll.update(item)
+    }
 }

@@ -33,7 +33,7 @@ class AnimalAdd : Fragment() {
         viewModel = ViewModelProviders.of(this).get(ViewModel::class.java)
 
         binding.animalImage.setImageResource(R.drawable.animalic)
-        binding.acceptButton.setOnClickListener {
+        binding.addButton.setOnClickListener {
             addAnimal(binding)
         }
         return binding.root

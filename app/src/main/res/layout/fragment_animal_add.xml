@@ -163,7 +163,7 @@
                     android:paddingRight="20dp">
 
                     <Button
-                        android:id="@+id/acceptButton"
+                        android:id="@+id/addButton"
                         style="@style/Button"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"

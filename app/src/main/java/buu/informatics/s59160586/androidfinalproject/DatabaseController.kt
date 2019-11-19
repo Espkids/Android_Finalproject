@@ -16,4 +16,8 @@ class DatabaseController(private val animalDAO: AnimalDatabaseDAO) {
     fun delete(item: String){
         animalDAO.delete(item)
     }
+
+    fun update(animal: Animal) {
+        animalDAO.update(animal)
+    }
 }

@@ -15,7 +15,10 @@
             style="@style/AnimalNameHeader"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/hintAnimalName" />
+            android:ems="10"
+            android:hint="@string/hintAnimalName"
+            android:inputType="textPersonName"
+            android:importantForAutofill="no" />
 
         <ImageView
             android:id="@+id/animalImage"
@@ -50,14 +53,15 @@
                         android:layout_weight="1"
                         android:text="@string/ENGName" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/animalEngName"
                         style="@style/MiddleRight"
                         android:layout_width="90dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:hint="@string/hintAnimalENGName"
-                        android:textAlignment="textStart" />
+                        android:hint="@string/ENGName"
+                        android:inputType="textPersonName"
+                        android:importantForAutofill="no" />
 
                 </LinearLayout>
 
@@ -74,13 +78,17 @@
                         android:layout_weight="1"
                         android:text="@string/sciName" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/animalSciName"
                         style="@style/MiddleRight"
                         android:layout_width="90dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:hint="@string/hintAnimalSciName" />
+                        android:ems="10"
+                        android:hint="@string/hintAnimalSciName"
+                        android:importantForAutofill="no"
+                        android:inputType="textPersonName" />
+
                 </LinearLayout>
 
                 <LinearLayout
@@ -96,14 +104,17 @@
                         android:layout_weight="1"
                         android:text="@string/species" />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/animalSpeName"
                         style="@style/MiddleRight"
                         android:layout_width="90dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:ems="10"
                         android:hint="@string/hintAnimalSpecies"
-                        android:textColorHint="@color/colorAccent" />
+                        android:inputType="textPersonName"
+                        android:importantForAutofill="no" />
+
                 </LinearLayout>
 
                 <TextView
@@ -114,12 +125,16 @@
                     android:layout_marginTop="20dp"
                     android:text="@string/hintFoodAndLocation" />
 
-                <TextView
+                <EditText
                     android:id="@+id/animalFoodAndLocation"
                     style="@style/Detail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/hintFoodAndLocation" />
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:hint="@string/hintFoodAndLocation"
+                    android:inputType="textMultiLine"
+                    android:importantForAutofill="no" />
 
                 <TextView
                     android:id="@+id/textView16"
@@ -128,12 +143,16 @@
                     android:layout_height="wrap_content"
                     android:text="@string/detail" />
 
-                <TextView
+                <EditText
                     android:id="@+id/animalDetail"
                     style="@style/Detail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/hintFoodDetail" />
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:hint="@string/hintFoodDetail"
+                    android:inputType="textMultiLine"
+                    android:importantForAutofill="no" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -148,20 +167,9 @@
                         style="@style/Button"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginEnd="20dp"
                         android:layout_weight="1"
                         android:background="@android:color/holo_green_light"
                         android:text="@string/updateButton" />
-
-                    <Button
-                        android:id="@+id/deleteButton"
-                        style="@style/Button"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:background="@android:color/holo_red_light"
-                        android:text="@string/deleteButton" />
-
                 </LinearLayout>
             </LinearLayout>
         </ScrollView>

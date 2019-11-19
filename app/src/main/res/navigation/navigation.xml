@@ -42,9 +42,24 @@
         <argument
             android:name="name"
             app:argType="string" />
+        <action
+            android:id="@+id/action_animalDetail2_to_animalUpdate"
+            app:destination="@id/animalUpdate" />
     </fragment>
     <fragment
         android:id="@+id/aboutFragment"
         android:name="buu.informatics.s59160586.androidfinalproject.About"
         android:label="About" />
+    <fragment
+        android:id="@+id/animalUpdate"
+        android:name="buu.informatics.s59160586.androidfinalproject.AnimalUpdate"
+        android:label="AnimalUpdate" >
+        <action
+            android:id="@+id/action_animalUpdate_to_animalDetail2"
+            app:destination="@id/animalDetail2"
+            app:popUpTo="@+id/animalList2" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+    </fragment>
 </navigation>

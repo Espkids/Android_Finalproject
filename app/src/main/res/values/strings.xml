@@ -22,7 +22,7 @@
     <string name="addButton">เพิ่มข้อมูล</string>
     <string name="acceptButton">ยืนยัน</string>
     <string name="cancelButton">ยกเลิก</string>
-    <string name="updateButton">Update</string>
+    <string name="updateButton">อัปเดทข้อมูล</string>
     <string name="editButton">แก้ไขข้อมูล</string>
     <string name="deleteButton">ลบข้อมูล</string>
     <string name="animalNameList">รายชื่อสัตว์</string>

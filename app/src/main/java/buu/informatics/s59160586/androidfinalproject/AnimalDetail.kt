@@ -38,6 +38,10 @@ class AnimalDetail : Fragment() {
             deleteData(value!!)
         }
 
+        binding.updateButton.setOnClickListener {
+            view?.findNavController()?.navigate(AnimalDetailDirections.actionAnimalDetail2ToAnimalUpdate(value))
+        }
+
         return binding.root
     }
 
