@@ -1,12 +1,14 @@
 package buu.informatics.s59160586.androidfinalproject
 
 
+import android.content.Context
 import android.os.Bundle
 import android.os.Handler
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProviders
@@ -155,6 +157,7 @@ class AnimalAdd : Fragment() {
             ).show()
             Handler().postDelayed({
                 findNavController().navigate(AnimalAddDirections.actionAnimalAddToAnimalList2())
+                hideKeyboard()
             }, 400)
         } else {
             Toast.makeText(
@@ -162,6 +165,11 @@ class AnimalAdd : Fragment() {
                 Toast.LENGTH_LONG
             ).show()
         }
+    }
+
+    fun hideKeyboard() {
+        val imm = context?.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+        imm.hideSoftInputFromWindow(view?.windowToken, 0)
     }
 
 }
