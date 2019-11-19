@@ -28,12 +28,21 @@
         android:label="AnimalAdd" >
         <action
             android:id="@+id/action_animalAdd_to_animalList2"
-            app:destination="@id/animalList2" />
+            app:destination="@id/animalList2"
+            app:popUpTo="@+id/animalList2" />
     </fragment>
     <fragment
         android:id="@+id/animalDetail2"
         android:name="buu.informatics.s59160586.androidfinalproject.AnimalDetail"
-        android:label="AnimalDetail" />
+        android:label="AnimalDetail" >
+        <action
+            android:id="@+id/action_animalDetail2_to_animalList2"
+            app:destination="@id/animalList2"
+            app:popUpTo="@+id/animalList2" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+    </fragment>
     <fragment
         android:id="@+id/aboutFragment"
         android:name="buu.informatics.s59160586.androidfinalproject.About"

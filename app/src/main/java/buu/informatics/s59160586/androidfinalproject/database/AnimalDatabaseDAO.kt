@@ -10,7 +10,7 @@ import androidx.room.Query
 interface AnimalDatabaseDAO {
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
-    fun insert(food: Animal)
+    fun insert(animal: Animal)
 
     @Query("SELECT * FROM animal ORDER BY animal_name ASC")
     fun getAllAnimal(): LiveData<List<Animal>>

@@ -69,4 +69,13 @@
         <item name="android:textColor">@color/colorAccent</item>
     </style>
 
+    <style name="ListDetail">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+    </style>
+
 </resources>

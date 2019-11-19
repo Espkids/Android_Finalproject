@@ -24,7 +24,7 @@ class Title : Fragment() {
             R.layout.fragment_title,container,false)
 
         binding.button.setOnClickListener { view: View? ->
-            view?.findNavController()?.navigate(R.id.action_title2_to_animalList22)
+            view?.findNavController()?.navigate(TitleDirections.actionTitle2ToAnimalList22())
         }
         setHasOptionsMenu(true)
         return binding.root

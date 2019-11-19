@@ -8,13 +8,13 @@ import androidx.room.PrimaryKey
 @Entity(tableName = "animal")
 data class Animal (
 
-    @PrimaryKey(autoGenerate = true)
-
-    @ColumnInfo(name = "animal_image")
-    var animalImage: String,
+    @PrimaryKey
 
     @ColumnInfo(name = "animal_name")
     var animalName: String,
+
+    @ColumnInfo(name = "animal_image")
+    var animalImage: Int,
 
     @ColumnInfo(name = "animal_eng_name")
     var animalEngName: String,
