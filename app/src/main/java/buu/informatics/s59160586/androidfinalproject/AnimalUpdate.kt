@@ -49,14 +49,16 @@ class AnimalUpdate : Fragment() {
         viewModel.allAnimal.observe(viewLifecycleOwner, Observer { item ->
             item.map {
                 if(it.animalName == value){
-                    binding?.animalName?.setText(it.animalName)
-                    binding?.animalImage?.setImageResource(it.animalImage)
-                    binding?.animalEngName?.setText(it.animalEngName, TextView.BufferType.EDITABLE)
-                    binding?.animalSciName?.setText(it.animalSciName, TextView.BufferType.EDITABLE)
-                    binding?.animalSpeName?.setText(it.animalSpecie, TextView.BufferType.EDITABLE)
-                    binding?.animalFoodAndLocation?.setText(it.animalFoodAndLocation, TextView.BufferType.EDITABLE)
-                    binding?.animalDetail?.setText(it.animalDetail, TextView.BufferType.EDITABLE)
-                    img = it.animalImage
+                    binding?.apply {
+                        animalName.setText(it.animalName)
+                        animalImage.setImageResource(it.animalImage)
+                        animalEngName.setText(it.animalEngName, TextView.BufferType.EDITABLE)
+                        animalSciName.setText(it.animalSciName, TextView.BufferType.EDITABLE)
+                        animalSpeName.setText(it.animalSpecie, TextView.BufferType.EDITABLE)
+                        animalFoodAndLocation.setText(it.animalFoodAndLocation, TextView.BufferType.EDITABLE)
+                        animalDetail.setText(it.animalDetail, TextView.BufferType.EDITABLE)
+                        img = it.animalImage
+                    }
                 }
             }
         })
